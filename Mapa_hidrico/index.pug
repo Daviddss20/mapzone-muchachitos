@@ -1,0 +1,11 @@
+extend ../components/template.pug
+block  specialVar
+    - var current_map = "Componente hidrológico"
+block content
+    main
+        include ../components/maps-navegation-sect.pug
+        section.maps
+            each map in maps 
+                if map.desc == current_map
+                    each iframe in map.maps 
+                        +drawmap(iframe.id, iframe.title, iframe.src)

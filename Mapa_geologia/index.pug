@@ -1,0 +1,48 @@
+extend ../components/template.pug
+block  specialVar
+    - var current_map = "Geología | Geomorfología | Susceptibilidades"
+block content
+    main
+        include ../components/maps-navegation-sect.pug
+        section.maps
+            ul.maps__options
+                li
+                    input(type="checkbox", id="regional")
+                    label(for="regional") Mapa regional
+            each map in maps 
+                if map.desc == current_map
+                    each iframe in map.maps 
+                        +drawmap(iframe.id, iframe.title, iframe.src)
+        section.maps
+            h2 Susceptibilidades en imágenes
+            #susceptibilidades
+                a(href="https://drive.google.com/uc?export=view&id=1pbx8L0GTVStwc39cxAU65KeYgUOiq7kb", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=1u6hKrbXZQ9bAsaNBjLF8cxacKWYgcbCR")
+                        img(src="https://drive.google.com/uc?export=view&id=1vGPuimukUQSZgRkid4HQ4RvO6_i2NwvE", alt="Mapa geológico 1")
+                a(href="https://drive.google.com/uc?export=view&id=1Diwbqpgg6qwBk9J90rsAQBnPTCFcXcxE", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=14P1XKUce7CzSZX63tysC9hpRYtgzPFmI")
+                        img(src="https://drive.google.com/uc?export=view&id=1YSuaQt3KV5EEZ-L9a9myX8fPoHqY-Zw4", alt="Mapa geológico 1")
+                a(href="https://drive.google.com/uc?export=view&id=1esUJ7UyQ0wCu8bvr26fMDLUrvRFve1XH", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=1sTPTqu24-DI5a4M8YK_is6bHBxM5SSF2")
+                        img(src="https://drive.google.com/uc?export=view&id=11wJvWuvl_ILI5dGLcUN_ax96gjgz1yih", alt="Mapa geológico 1")
+                a(href="https://drive.google.com/uc?export=view&id=1ErT_r9LheeZJgfwSu7TMjiyA3cGLsPGn", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=1jC-gxtifbz-eyrfv508e7vp-32-ccDlY")
+                        img(src="https://drive.google.com/uc?export=view&id=1NNcD4oP6QH4352akEX2fTUCWFEDmLcPz", alt="Mapa geológico 1")
+                a(href="https://drive.google.com/uc?export=view&id=11VT1tOSsDSCzwL7NwMA-Gkf2tSMwfyQB", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=1a38MyE2uM7f9a__yCSXAHUTDZ7qFiNve")
+                        img(src="https://drive.google.com/uc?export=view&id=1wYcjjdsRZp30OybtnIuhqq1Ql1kZzme9", alt="Mapa geológico 1")
+                a(href="https://drive.google.com/uc?export=view&id=1xz-1PPp8Cug_ToBeZf66HXGot2p3OhUy", target="_blank")
+                    picture
+                        source(media="(min-width:425px)" srcset="https://drive.google.com/uc?export=view&id=1ILW52ZqRLMKBXV1YQj6a1xFYdkYTtyYk")
+                        img(src="https://drive.google.com/uc?export=view&id=1axwbRa2SDa3u1mxKdGiXnIaLXxqmsxev", alt="Mapa geológico 1")
+    style.
+        #mapa_geo-regional{display: none;}
+        #susceptibilidades {display: flex;flex-direction: column;gap: 12px;}
+        #susceptibilidades img {width: 100%;}
+        @media (min-width: 768px) {.maps__options li {font-size: 1.8rem;}}
+    script(src="./index.js" defer)

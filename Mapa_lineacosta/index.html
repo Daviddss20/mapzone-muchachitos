@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSXMP2M2LL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LSXMP2M2LL');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Silgado Salcedo">
+    <meta name="description" content="Resultados visuales de estudios oceanográficos y geoténicos del sector Los Muchachitos en Magdalena, Colombia">
+    <title>Mapas interactivos - Los Muchachitos | Mapzone</title>
+    <meta property="og:image" content="./assets/ecosystems-icon.svg">
+    <meta property="og:description" content="Resultados visuales de estudios oceanográficos y geoténicos del sector Los Muchachitos en Magdalena, Colombia">
+    <meta property="og:title" content="Los Muchachitos | Mapzone">
+    <meta property="og:type" content="Design">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="/assets/location.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h1>Los Muchachitos</h1>
+        <div class="geodbs"><img src="../images/server.png" alt="db icon"><a class="geodbs__general" href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&amp;export=download" download>Geodatabase general</a><a class="geodbs__local" href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&amp;export=download" download>Geodatabase evolución de líneas de costa</a>
+        </div>
+      </header>
+      <main>
+        <section class="maps-navegation-sect">
+          <h2>Evolución de líneas de costa</h2>
+          <nav> 
+            <ul>
+              <li><a href="../Mapa_base">Mapa base</a></li>
+              <li><a href="../Mapas_3D/">Mapas 3D</a></li>
+              <li><a href="../Mapa_hidrico/">Componente hidrológico</a></li>
+              <li><a href="../Mapa_geologia/">Geología | Geomorfología | Susceptibilidades</a></li>
+              <li><a href="../Mapa_zonificacion/">Mapa de zonificación</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="maps">
+          <iframe id="mapa_lineacosta" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa de lineas de costa" src="//tecnologica.maps.arcgis.com/apps/Embed/index.html?webmap=2bd77daf94324e9e8f812c314a5032dd&amp;extent=-73.6625,11.2512,-73.6569,11.2538&amp;home=true&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;legendlayers=true&amp;basemap_gallery=true&amp;disable_scroll=false&amp;theme=light"> </iframe>
+          <iframe id="mapa_lineacosta-evolucion" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa de evolución de lineas de costa" src="https://storymaps.arcgis.com/stories/b2200821f08249af8237a1feb3bef14a?cover=false"> </iframe>
+        </section>
+      </main>
+      <footer>Mapzone</footer>
+    </div>
+  </body>
+</html>

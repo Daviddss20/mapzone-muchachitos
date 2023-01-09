@@ -1,0 +1,67 @@
+/*
+1. Box model
+2. Positions
+3. Typo
+4. Visuales
+5. Miscellaneous
+*/
+
+$white-1: rgb(255, 255, 255);
+$white-2: rgb(228, 224, 228);
+$black-1: rgb(5, 4, 18);
+$gray-1: rgb(193, 149, 161);
+$gray-2: rgb(164, 92, 118);
+$cold-1: rgb(140, 161, 201);
+$cold-2: rgb(64, 77, 128);
+$warm-1: rgb(209, 157, 66);
+
+/*Font size*/
+$large: 4.8rem;
+$medium: 3.2rem;
+$small: 2.4rem;
+$smaller: 1.6rem;
+
+/*Font weight*/
+$light: 300;
+$regular: 500;
+$bold: 700;
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 65.2%;
+    font-style: normal;
+    font-family: 'Spline Sans', sans-serif;
+    color: $black-1;
+}
+
+body {
+    background-color: $white-1;
+}
+
+#main-container {
+    padding: 12px 12px 0;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.geodbs a {
+    color: $white-2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}

@@ -1,0 +1,9 @@
+section.maps-navegation-sect
+    each map in maps 
+        if map.desc == current_map
+            h2=map.desc
+    nav 
+        ul
+            each map in maps 
+                if map.desc != current_map
+                    li: a(href=map.website_link) #{map.desc}

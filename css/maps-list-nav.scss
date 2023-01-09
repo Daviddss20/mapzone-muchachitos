@@ -1,0 +1,27 @@
+.maps-navegation-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 12px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            padding: 5px 10px;
+        
+            color: $cold-1;
+            border-radius: 4px;
+        
+            font-size: $smaller;
+            font-weight: $regular;
+            line-height: 1.9rem;
+        }
+    }
+}

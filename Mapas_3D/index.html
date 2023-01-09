@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSXMP2M2LL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LSXMP2M2LL');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Silgado Salcedo">
+    <meta name="description" content="Resultados visuales de estudios oceanográficos y geoténicos del sector Los Muchachitos en Magdalena, Colombia">
+    <title>Mapas interactivos - Los Muchachitos | Mapzone</title>
+    <meta property="og:image" content="./assets/ecosystems-icon.svg">
+    <meta property="og:description" content="Resultados visuales de estudios oceanográficos y geoténicos del sector Los Muchachitos en Magdalena, Colombia">
+    <meta property="og:title" content="Los Muchachitos | Mapzone">
+    <meta property="og:type" content="Design">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="/assets/location.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h1>Los Muchachitos</h1>
+        <div class="geodbs"><img src="../images/server.png" alt="db icon"><a class="geodbs__general" href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&amp;export=download" download>Geodatabase general</a><a class="geodbs__local" href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&amp;export=download" download>Geodatabase mapas 3d</a>
+        </div>
+      </header>
+      <main>
+        <section class="maps-navegation-sect">
+          <h2>Mapas 3D</h2>
+          <nav> 
+            <ul>
+              <li><a href="../Mapa_base">Mapa base</a></li>
+              <li><a href="../Mapa_hidrico/">Componente hidrológico</a></li>
+              <li><a href="../Mapa_lineacosta/">Evolución de líneas de costa</a></li>
+              <li><a href="../Mapa_geologia/">Geología | Geomorfología | Susceptibilidades</a></li>
+              <li><a href="../Mapa_zonificacion/">Mapa de zonificación</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="maps">
+          <ul class="maps__options">
+            <li>
+              <input type="checkbox" id="geolocalizador">
+              <label for="geolocalizador">Mapa con geolocalizador</label>
+            </li>
+            <li>
+              <input type="checkbox" id="transparente">
+              <label for="transparente">Mapa transparente</label>
+            </li>
+          </ul>
+          <iframe id="mapa_3d-geolocalizador" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa 3d con geolocalizador" src="https://storymaps.arcgis.com/stories/9138ee8a0af045fa9e6e4eee087c7272?cover=false"> </iframe>
+          <iframe id="mapa_3d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa 3d" src="https://arcg.is/baP5C1"> </iframe>
+          <iframe id="mapa_3d-transparente" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapa 3d transparente" src="https://arcg.is/Pr4mT"> </iframe>
+        </section>
+      </main>
+      <style>
+        #mapa_3d-transparente,
+        #mapa_3d-geolocalizador {display: none;}
+        @media (min-width: 768px) {.maps__options li {font-size: 1.8rem;}}
+        
+      </style>
+      <script src="./index.js" defer> </script>
+      <footer>Mapzone</footer>
+    </div>
+  </body>
+</html>

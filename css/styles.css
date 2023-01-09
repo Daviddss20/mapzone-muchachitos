@@ -1,0 +1,163 @@
+/*
+1. Box model
+2. Positions
+3. Typo
+4. Visuales
+5. Miscellaneous
+*/
+/*Font size*/
+/*Font weight*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 65.2%;
+  font-style: normal;
+  font-family: "Spline Sans", sans-serif;
+  color: rgb(5, 4, 18);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#main-container {
+  padding: 12px 12px 0;
+}
+
+header {
+  height: auto;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.geodbs a {
+  color: rgb(228, 224, 228);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+h1 {
+  color: rgb(5, 4, 18);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.maps-navegation-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+.maps-navegation-sect ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.maps-navegation-sect ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 5px 10px;
+  color: rgb(140, 161, 201);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+
+.maps {
+  display: grid;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 600px;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 19px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 80px 120px 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+  .geodbs {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-left: 28px;
+    background-color: rgb(140, 161, 201);
+    color: rgb(228, 224, 228);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  .maps-navegation-sect {
+    display: grid;
+    gap: 28px;
+    padding-bottom: 28px;
+  }
+  .maps-navegation-sect ul {
+    gap: 16px;
+  }
+  .maps-navegation-sect ul a {
+    height: 50px;
+    padding: 10px 20px;
+    border: 3px solid rgb(140, 161, 201);
+    border-radius: 25px;
+    transition: ease-out 200ms;
+    font-weight: 700;
+  }
+  .maps-navegation-sect ul a:hover {
+    cursor: pointer;
+    color: rgb(64, 77, 128);
+    border-radius: 18px;
+    border-color: rgb(64, 77, 128);
+  }
+  .maps {
+    gap: 28px;
+  }
+}
+@media (min-width: 1232px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
