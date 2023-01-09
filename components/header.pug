@@ -1,8 +1,9 @@
 header
     h1 Los Muchachitos
     .geodbs
-        img(src="../images/server.png", alt="db icon")
+        img(src="../assets/server.png", alt="db icon")
         a.geodbs__general(href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&export=download" download) Geodatabase general
         each map in maps 
             if map.desc == current_map
-                a.geodbs__local(href="https://drive.google.com/uc?id=16WdqCMooWnp9myHh6FmSYfCM3uN62bdE&export=download" download) Geodatabase #{map.desc.toLowerCase()}
+                a.geodbs__local(href=map.geodatabase download) Geodatabase #{map.desc.toLowerCase()}
+        a.geodbs__shapefiles(href="https://drive.google.com/uc?id=1K5LEr27e3gy0dF3ltBX0bK-l9zYRuUkA&export=download" download) Lista de shapefiles

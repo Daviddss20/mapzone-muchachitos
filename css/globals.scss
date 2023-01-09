@@ -60,6 +60,10 @@ header {
     color: $white-2;
 }
 
+.geodbs a:hover {
+    color: $white-1;
+}
+
 main {
     display: flex;
     flex-direction: column;
