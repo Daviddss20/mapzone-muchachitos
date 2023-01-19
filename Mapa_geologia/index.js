@@ -1,12 +1,8 @@
 let frameRegional = document.getElementById('mapa_geo-regional')
 let regionalChecker = document.getElementById('regional')
 
-regionalChecker.addEventListener('click', showHideMaps)
+regionalChecker.addEventListener('click', toggleMaps)
 
-function showHideMaps() {
-    if (regionalChecker.checked) {
-        frameRegional.style.display = 'block'
-    } else {
-        frameRegional.style.display = 'none'
-    }
+function toggleMaps() {
+    frameRegional.classList.toggle('inactive')
 }
